@@ -33,3 +33,23 @@ A simple project on how to use Terraform to create infrastructure on AWS. This w
 <li>info can be confirmed on AWS. select the user/account in the upper-right corner to compare the information.</li>
 
 ![Image](https://github.com/user-attachments/assets/6f91fa15-e509-4eab-ba59-46bb802e26ef)
+### 2. Clone repo locally using Git Bash
+fork <a href="https://github.com/asecurityguru/terraform-ec2-jenkins-aws-k8s-infra-creation.git">repo</a> into your git account. I have already done this.
+
+![Image](https://github.com/user-attachments/assets/68b7b427-2acb-4def-9761-a359f72d837c)
+<li>this repo contains all the files that we will be using for this demonstration.</li>
+<li>I created a new folder on my local machine and created folder for the repo. open the folder and right-click Git Bash here.</li>
+
+![Image](https://github.com/user-attachments/assets/21c8c277-f285-4a5b-a7f8-8a86ecc96bdc)
+<li>now clone into the repo: git clone https://github.com/andreisims/terraform-ec2-jenkins-aws-k8s-infra-creation.git</li>
+
+![Image](https://github.com/user-attachments/assets/8d38bce5-658a-4881-8c37-a998aa6cbd14)
+<li>repo files now show locally</li>
+
+![Image](https://github.com/user-attachments/assets/557e50c8-c4ef-4255-bf00-910ad7aad472)
+### 3. Visual Studio
+<li>open Terraform repo in Visual Studio. file> open folder> and locate the folder where cloned repo is> select folder</li>
+
+![Image](https://github.com/user-attachments/assets/6ff4f1a7-c28b-4846-bfcd-2690f7396975)
+
+
