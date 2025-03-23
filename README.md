@@ -2,7 +2,7 @@
 A simple project on how to use Terraform to create infrastructure on AWS. This will be an EC2 instance that has Jenkins pre-installed. 
 ## Requirements
 <li>an AWS account</li>
-<li>an AWS admin user</li>
+<li>an AWS admin user (the default login credentials)</li>
 <li>AWS CLI</li>
 <li>Visual Studio Code</li>
 <li>Notepad or Excel (for documentation)</li>
@@ -51,5 +51,30 @@ fork <a href="https://github.com/asecurityguru/terraform-ec2-jenkins-aws-k8s-inf
 <li>open Terraform repo in Visual Studio. file> open folder> and locate the folder where cloned repo is> select folder</li>
 
 ![Image](https://github.com/user-attachments/assets/6ff4f1a7-c28b-4846-bfcd-2690f7396975)
+<li>Vars folder stores all the variable files. install_jenkins.sh is a shell script file to automate the installation and setup of Jenkins</li>
+
+![Image](https://github.com/user-attachments/assets/62d7c354-71cf-41c7-a791-46a68161e853)
+<li>main.tf contains entire script to create EC2 instance. the primary file searched by terraform to create the infrastructure. install_jenkins.sh is referenced in it</li>
+
+![Image](https://github.com/user-attachments/assets/cce2e6c1-2514-4e9d-84f5-dc32d8a15577)
+<li>outputs.tf is used to store outputs from infrastructure creation</li>
+
+![Image](https://github.com/user-attachments/assets/88fd1580-eaee-400a-850e-94ca1b569df8)
+### 4. Variable file and Key Pair
+<li>update the file with your VPC ID. search for vpc on AWS console> VPC dashboard> Your VPCs.
+If you have more than one, the default VPC has the 172.31.0.0/16 CIDR block</li>
+<li>this file is passed to the terraform script (terraform apply -var-file="vars/dev-west-2.tfvars")
+on the AWS console. Be sure that your are in the same region as the script: aws_region = "us-west-2"</li>
+
+![Image](https://github.com/user-attachments/assets/b623284e-a47b-499f-9c67-27a7925b1082)
+<li>for key pair, sign into AWS console. go to the EC2 dashboard> launch instance> create new key pair> name it and copy it to notepad</li>
+<li>select RSA key pair type and .ppk as file format> select create key pair</li>
+
+![Image](https://github.com/user-attachments/assets/e1e5ae75-076b-45f2-9dda-cb966b3ff566)
+<li>key pair is downloaded to your pc. go to file location where is has been downloaded. copy and paste file into the cloned repo</li>
+
+![Image](https://github.com/user-attachments/assets/ab16a33b-2609-4fac-baa6-3ca381c40772)
+
+![Image](https://github.com/user-attachments/assets/560caf37-3d89-459f-9feb-6f601696ee72)
 
 
