@@ -76,5 +76,38 @@ on the AWS console. Be sure that your are in the same region as the script: aws_
 ![Image](https://github.com/user-attachments/assets/ab16a33b-2609-4fac-baa6-3ca381c40772)
 
 ![Image](https://github.com/user-attachments/assets/560caf37-3d89-459f-9feb-6f601696ee72)
+<li>take the file name that you copied to notepad and update the key_name section in the dev-west-2.tfvars file</li>
+
+![Image](https://github.com/user-attachments/assets/7be04cc9-38c2-4f74-814e-942e0025db10)
+### 5. Run Terraform script to create AWS infrastructure
+<li>the steps are outlined in the README.md file. open new terminal in VS Code</li>
+
+![Image](https://github.com/user-attachments/assets/91d0ff80-11ba-4140-85b7-5ce7be930c26)
+<li>now copy and paste the code from the README.md file in the terminal according to the steps</li>
+
+#### Step 1: Initialize Terraform
+<li>terraform init</li>
+
+![Image](https://github.com/user-attachments/assets/d3c5982a-ad37-4d0b-9f04-928251dd142a)
+
+![Image](https://github.com/user-attachments/assets/2213dccd-1bb2-4675-967e-10e2bbf70e94)
+
+<li>its initializing the backend, and provider plugins. also created a new .terraform directory</li>
+
+![Image](https://github.com/user-attachments/assets/d1b6882b-ee0d-42f5-a429-a8e0255f1fca)
+#### Step 2: Plan Resources
+<li>terraform plan -var-file="vars/dev-west-2.tfvars"</li>
+
+#### Step 3: Apply Resources
+<li>terraform apply -var-file="vars/dev-west-2.tfvars"</li>
+
+![Image](https://github.com/user-attachments/assets/e0b94327-0a7b-46e5-9703-7f0bb96d8d2b)
+<li>after running this script, let's go back to the AWS EC2 dashboard to see the new instance that was created</li>
+
+![Image](https://github.com/user-attachments/assets/170873e1-444d-40b7-a783-9a458e851462)
+
+![Image](https://github.com/user-attachments/assets/603c58fe-ffe8-407d-817f-576dedae0399)
+
+
 
 
