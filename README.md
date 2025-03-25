@@ -110,6 +110,7 @@ on the AWS console. Be sure that your are in the same region as the script: aws_
 <li>open the Public IPv4 DNS address, remove the 's' from https since there is not a certificate and add port 8081</li>
 
 ![Image](https://github.com/user-attachments/assets/1b78b9a0-6b83-44f2-b501-94dc1cca382a)
+# SUCCESS!
 
 
 
