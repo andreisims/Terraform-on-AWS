@@ -111,6 +111,7 @@ on the AWS console. Be sure that your are in the same region as the script: aws_
 
 ![Image](https://github.com/user-attachments/assets/1b78b9a0-6b83-44f2-b501-94dc1cca382a)
 # SUCCESS!
+For the next phase of this project, we will integrate SonarCloud into the pipeline to scan a vulnerable application
 
 
 
